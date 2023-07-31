@@ -1,0 +1,107 @@
+.payment-wrapper{
+    display: grid;
+    place-content: center;
+    padding-top: 100px;
+    font-family: arial;
+}
+.payment-form{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 75vh;
+}
+.payment-form-group{
+    display: flex;
+    align-items: center;
+}
+.payment-form-group p{
+    font-size: 20px;
+}
+.payment-continue-btn{
+    width: 180px;
+    height: 48px;
+    border-radius: 20px;
+    margin-right: 10px;
+    border: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payment-continue-btn i{
+    font-size: 25px;
+}
+.visa i{
+    font-size: 50px;
+}
+.mpesa-form, .visa-form{
+    margin-top: 30px;
+}
+#half, #expirationDate{
+    width: 49%;
+    margin-right: 1%;
+}
+.submit-payment-btn{
+    width: 180px;
+    height: 48px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: black;
+    border: none;
+}
+.checkout-summary{
+    border: 1px solid rgb(152, 152, 152);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.contact-summary{
+    border-bottom: 1px solid rgb(219, 219, 219);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.shipping-summary{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+.order-summary{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.order-summary div p{
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+.error {
+    color:red;
+}
+#cardNumber{
+    outline: none;
+}
+@media only screen and (max-width: 600px){
+    .checkout-summary{
+        min-width: 350px;
+    }
+    .payment-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .payment-form-wrap{
+        width: 42vh;
+    }
+    .payment-form button{
+        width: 100px;
+        height: 40px;
+    }
+}
+
+
+
+
+

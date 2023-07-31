@@ -13,8 +13,12 @@
   }
 }
 
+* {
+  color: black;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: #0f0f0f;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +40,401 @@
     transform: rotate(360deg);
   }
 }
+
+/* Navbar */
+@media screen and (min-width:777px){
+  .nav-link {
+    padding:18px 0;
+    min-width:120px;
+  }
+  .navbar {
+    padding: 0;
+    
+  
+  }
+}
+
+
+
+p, h1, h2, h3,h4,h5,label, a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.logo {
+  width: 300px;
+  height: 200px;
+  margin-top: -25px;
+  margin-bottom: -60px;
+}
+
+.image-logo {
+  height: 500px;
+  
+}
+nav {
+  background-color: #ffffff;
+  height: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  border-bottom-style: inset;
+}
+
+/* Add the hover style for links */
+.navbar-nav .nav-link:hover {
+  background-color: red;
+  color: white; /* Optionally, change the text color on hover */
+  border-radius: 5px;
+}
+
+/* Optionally, change the default link color */
+.navbar-nav .nav-link {
+  color: black; /* Change to your preferred default link color */
+}
+
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Adjust the z-index value as needed to ensure it appears above other elements */
+  /* Add any other styles you want for the sticky navbar */
+}
+
+
+
+#donate-btn{
+  width: 150px; 
+  height: 50px; 
+  font-size: 18px;
+}
+
+.sign-in{
+  margin-left: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.carousel-item img {
+  height: 550px; /* Adjust the height as per your preference */
+}
+
+/* Style the edges with rounded corners */
+.carousel-inner img {
+  border-radius: 1px; /* Adjust the radius as per your preference */
+}
+
+.carousel-header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fe295e;
+  font-size: 50px;
+}
+
+.mission{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Flexbox layout for the container */
+.image-and-text-container {
+  display: flex;
+  align-items: center; /* Vertically center items within the container */
+  margin-bottom: 40px;
+}
+
+/* Adjust the size of the image container */
+.image-container {
+  flex: 0 0 auto; /* Allow the container to grow and shrink, but don't let it grow beyond its content size */
+  margin-right: 10px; /* Adjust the margin as needed to create spacing between image and text */
+}
+
+/* Image styles */
+.image-container img {
+  width: 500px; /* Ensure the image doesn't exceed its container's width */
+  height: 500px; /* Maintain the aspect ratio of the image */
+  margin-left: 10px;
+}
+
+/* Text content styles */
+.text-content {
+  /* Add any styles you want for the text content */
+}
+
+#testimonial {
+  width: 200px;
+  height: 200px;
+  border-radius: 2px;
+}
+
+/* Icons */
+
+.icons {
+  width: 100px;
+  height: 100px;
+}
+
+img{
+  height: 400px;
+  width: 100%
+}
+
+.card-header {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  height: 100px;
+}
+
+.user-story {
+  display: flex;
+  height: 100px;
+}
+
+.user-text{
+  width: 800px;
+  margin-left: 30px;
+}
+
+/* Cards */
+.cstm-height-card .card-img-top {
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Custom styles for cards */
+.custom-card {
+  width: 100%; /* Adjust the width of the card as needed */
+  height: 400px; /* Adjust the height of the card as needed */
+  margin-bottom: 20px; /* Adjust the margin between cards as needed */
+  /* Add any other custom styles for the cards */
+}
+
+/* Optionally, style the card images to fit the custom card size */
+.custom-card .card-img-top {
+  width: 100%; /* Adjust the width of the card image to fit the card size */
+  height: 200px; /* Adjust the height of the card image as needed */
+  object-fit: cover; /* Ensure the image fills the container without stretching */
+}
+
+
+/* Footer */
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+/* Create charities */
+
+@media (min-width: 1025px) {
+  .h-custom {
+  height: 100vh !important;
+  }
+  }
+  .card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+  }
+  .card-registration .select-arrow {
+  top: 13px;
+  }
+  
+  .gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #a1c4fd;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1))
+  }
+  
+  .bg-indigo {
+  background-color: #4835d4;
+  }
+  @media (min-width: 992px) {
+  .card-registration-2 .bg-indigo {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  }
+  }
+  @media (max-width: 991px) {
+  .card-registration-2 .bg-indigo {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  }
+  }
+
+  .card {
+      border-radius: 15px;
+  }
+
+  
