@@ -31,6 +31,13 @@ function Signup(){
                       </h5>
 
                       <div className="form-outline mb-4">
+                        <input type="password" id="form2Example27" className="form-control form-control-lg" />
+                        <label className="form-label" htmlFor="form2Example27">
+                          Name
+                        </label>
+                      </div>
+
+                      <div className="form-outline mb-4">
                         <input type="email" id="form2Example17" className="form-control form-control-lg" />
                         <label className="form-label" htmlFor="form2Example17">
                           Email address

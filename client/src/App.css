@@ -57,7 +57,7 @@
 
 
 p, h1, h2, h3,h4,h5,label, a {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Roboto Slab', serif;
 
 }
 
@@ -81,6 +81,8 @@ nav {
   border-bottom-style: inset;
 }
 
+
+
 .nav-logo {
   width: 100px;
   height: 100px;
@@ -89,6 +91,7 @@ nav {
 .nav-item {
   display: flex;
   align-items: center;
+  color: white;
 }
 
 /* Add the hover style for links */
@@ -136,21 +139,27 @@ nav {
 }
 
 .carousel-header {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #0b042b;
+  font-family: 'Lugrasimo', serif;  color: #0b042b;
   font-size: 60px;
 }
 
 .carousel-text {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Lugrasimo', serif;
   color: #110803;
   font-size: 20px;
 }
 
 .mission{
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   text-decoration: underline;
+  text-decoration-color: #eb6f8e;
+  text-underline-offset: 20px;
+  font-family: 'Lugrasimo', serif;
+}
+
+.mission-text {
+  font-family: 'Roboto Slab', serif;
 }
 
 /* Flexbox layout for the container */
@@ -178,16 +187,19 @@ nav {
 .impact-text {
   font-size: 40px;
   text-decoration: underline;
+  font-family: 'Lugrasimo', serif;
 }
 
 /* Text content styles */
 .text-content {
   /* Add any styles you want for the text content */
   font-size: 20px;
+  font-family: 'Lugrasimo', serif;
+  
 }
 
 .testimonial-div{
-  background-color: #be5656;
+  background-color: #eb6f8e;
   padding: 30px;
 }
 
@@ -212,7 +224,7 @@ img{
 
 .card-header {
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Lugrasimo', serif;
 }
 
 .card-container {
