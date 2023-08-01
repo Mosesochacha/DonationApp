@@ -437,4 +437,26 @@ img{
       border-radius: 15px;
   }
 
-  
+  /* About us */
+
+  .girls-group-header {
+    float: left;
+    font-size: 60px;
+    margin-left: -60px;
+    margin-top: -15px;
+  }
+
+  #girls-group-header-color{
+    background-color: rgb(197, 83, 102);
+  }
+
+  /* .logo-image {
+    width: auto;
+    float: left;
+  } */
+
+  .desc {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+  }
