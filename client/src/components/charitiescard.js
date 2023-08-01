@@ -6,7 +6,7 @@ function Charitycard(){
     return(
         <>
             <div class="container">
-		<h2>How to support </h2>
+		<h2 style={{textDecoration: "underline"}} >How to support </h2>
 		
 		<div class="row mb-5">
 			<div class="col-md-4">

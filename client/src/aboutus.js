@@ -18,6 +18,10 @@ function Aboutus() {
         </div>
     </div>
 
+    <div className="about-header">
+        <h2>Who we are</h2>
+    </div>
+
     <div className="desc">    
     <img src={logo} className="logo-image" alt="logo" />
     <p className="desc-text">The Path is a Kenyan based Non-profit organisation aimed at keeping more disadvanted girls in school. Through our donation and charity programs, we collaborate with several insitutions to provide santary towels, water, hygiene and sanitary facilities to girls in poor environments.</p>
