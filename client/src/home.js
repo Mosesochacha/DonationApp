@@ -53,7 +53,7 @@ function Home(){
 
 {/* Our Mission */}
 <div>
-    <h1 className="mission">Our Mission</h1>
+   
 </div>
 
 <div class="image-and-text-container">
@@ -61,13 +61,31 @@ function Home(){
     <img src="https://images.unsplash.com/photo-1541976844346-f18aeac57b06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbW11bml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Image" />
   </div>
   <div class="text-content">
-    <p>Your text goes here.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <h1 className="mission">Our Mission</h1>
+    <p>Equipping the girl child with the resources and tools need to take and keep them in school</p>
+
+    <h1 className="mission">Our Vision</h1>
+    <p>We beleive in a world were every person should have an opportunity to acquire education.</p>
+
+    <h1 className="mission">What we do</h1>
+    <p>We believe that lasting change comes from within. We believe that children born into poverty are not a problem to be solved, but a solution waiting to be unleashed. So we rescue children from injustice and equip them to be adults of influence.</p>   
   </div>
 </div>
 
+<div class="image-and-text-container">
+<div >
+    <p className="impact-text" >Our Impact</p>
+    <p class="text-content">Empower a vulnerable girl child in Kenya, Africa to live a full and productive life through the provision of education, water and sanitary facilites in a caring and loving environment.</p>
+  </div>
+  <div class="image-container">
+    <img src="https://images.unsplash.com/photo-1541976844346-f18aeac57b06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbW11bml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Image" />
+  </div>
+ 
+</div>
+
 {/* User Story */}
-<div>
+<div className="testimonial-div">
+  <div>
     <h1 className="mission">Testimonials</h1>
 </div>
 
@@ -80,9 +98,10 @@ function Home(){
     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
   </div>
 </div>
+</div>
 
 {/* Icons */}
-        <div>
+        <div className="icons-card">
             <img className="icons" src="https://img.icons8.com/?size=512&id=BC638vMs26cO&format=png" alt="donation-icon"></img>
             <img className="icons" src="https://img.icons8.com/?size=512&id=JLOQMU8Ay69w&format=png" alt="water-icon"></img>
 
