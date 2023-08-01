@@ -1,103 +1,96 @@
-import { useState } from 'react';
-
+import React from "react";
 import './donations.css'
-function Payment({subtotal}){
-    const [mpesaDisplay, setMpesaDisplay] = useState(true)
-    const cardNumberInput = document.getElementById('cardNumber');
-    cardNumberInput?.addEventListener('input', function() {
-    let cardNumber = this.value.replace(/\s/g, '');
-    let formattedCardNumber = '';
-    for (let i = 0; i < cardNumber.length; i++) {
-        formattedCardNumber += cardNumber.charAt(i);
-        if ((i + 1) % 4 === 0 && i !== cardNumber.length - 1) {
-        formattedCardNumber += ' ';
-        }
-    }
-    this.value = formattedCardNumber;
-    });
-    const mpesaStyle={
-        display: mpesaDisplay===true?'block':'none'
-    }
-    const visaStyle={
-        display: mpesaDisplay===true?'none':'block'
-    }
+
+function Donations(){
     return(
-        <div className='payment-page'>
-        <div className="payment-wrapper">
-            <div
- className="checkout-wrap-header" style={{width:
-window.screen.width<600?`${window.screen.width - 50}px`:"auto"}}>
-                <h1>Checkout</h1>
-                <div className="checkout-links">
-                    <div className="checkout-link">
-                        <i class="las la-check check check-bg"></i>
-                        <a href="/cart">Cart</a>
+       
+        <div class="container py-5">
+  
+    <div class="row mb-4">
+        <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-6">Bootstrap Payment Forms</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 mx-auto">
+            <div class="card ">
+                <div class="card-header">
+                    <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                        
+                        <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                            <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Credit Card </a> </li>
+                            <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link "> <i class="fab fa-paypal mr-2"></i> Paypal </a> </li>
+                            <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> Net Banking </a> </li>
+                        </ul>
+                    </div> 
+                    <div class="tab-content">
+                        
+                        <div id="credit-card" class="tab-pane fade show active pt-3">
+                            <form role="form" onsubmit="event.preventDefault()">
+                                <div class="form-group"> <label for="username">
+                                        <h6>Card Owner</h6>
+                                    </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control " /> </div>
+                                <div class="form-group"> <label for="cardNumber">
+                                        <h6>Card number</h6>
+                                    </label>
+                                    <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control "  />
+                                        <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="form-group"> <label><span class="hidden-xs">
+                                                    <h6>Expiration Date</h6>
+                                                </span></label>
+                                            <div class="input-group"> <input type="number" placeholder="MM" name="" class="form-control" required /> <input type="number" placeholder="YY" name="" class="form-control" required /> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
+                                                <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                            </label> <input type="text" required class="form-control" /> </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer"> <button type="button" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div> 
+                    <div id="paypal" class="tab-pane fade pt-3">
+                        <h6 class="pb-2">Select your paypal account type</h6>
+                        <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio" checked/> Domestic </label> <label class="radio-inline"> <input type="radio" name="optradio" class="ml-5" />International </label></div>
+                        <p> <button type="button" class="btn btn-primary "><i class="fab fa-paypal mr-2"></i> Log into my Paypal</button> </p>
+                        <p class="text-muted"> Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
                     </div>
-                    <div className="line"></div>
-                    <div className="checkout-link">
-                        <i class="las la-check check check-bg"></i>
-                        <a href="/checkout">Checkout</a>
-                    </div>
-                    <div className="checkout-link">
-                        <i class="las la-check check"></i>
-                        <a href="#">Payment</a>
-                    </div>
+                    <div id="net-banking" class="tab-pane fade pt-3">
+                        <div class="form-group "> <label for="Select Your Bank">
+                                <h6>Select your Bank</h6>
+                            </label> <select class="form-control" id="ccmonth">
+                                <option value="" selected disabled>--Please select your Bank--</option>
+                                <option>Bank 1</option>
+                                <option>Bank 2</option>
+                                <option>Bank 3</option>
+                                <option>Bank 4</option>
+                                <option>Bank 5</option>
+                                <option>Bank 6</option>
+                                <option>Bank 7</option>
+                                <option>Bank 8</option>
+                                <option>Bank 9</option>
+                                <option>Bank 10</option>
+                            </select> </div>
+                        <div class="form-group">
+                            <p> <button type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Proceed Payment</button> </p>
+                        </div>
+                        <p class="text-muted">Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
+                    </div> 
+                   
                 </div>
-            </div>
-            <div className='checkout-summary'>
-                <div className='contact-summary'>
-                    <div>
-                        <h5>Contact Information</h5>
-                        <p></p>
-                    </div>
-                    <a href='/checkout'>Edit</a>
-                </div>
-                <div className='shipping-summary'>
-                    <div>
-                        <h5>Shipping Information</h5>
-                        <p>Enter Address</p>
-                    </div>
-                    <a href='/billing'>Edit</a>
-                </div>
-                <div className='order-summary'>
-                    <div>
-                        <h5>Order Information</h5>
-                        <p>Subtotal: Ksh. {subtotal}</p>
-                        <p>Delivery fees: Ksh. 500</p>
-                        <p>TOTAL: Ksh. {subtotal+500}</p>
-                    </div>
-                    <a href='/cart'>Edit</a>
-                </div>
-            </div>
-            <div className='payment-form-wrap'>
-                <h2>Payment Information</h2>
-                <div className='payment-form'>
-                    <button
- className='payment-continue-btn paypal btn-primary'><i class='bx
-bxl-paypal' ></i> Paypal</button>
-                    <button
- className='payment-continue-btn mpesa btn-success'
-onClick={e=>setMpesaDisplay(true)}>Mpesa</button>
-                    <button
- className='payment-continue-btn visa btn-primary'
-onClick={e=>setMpesaDisplay(false)}><i class='bx
-bxl-visa'></i></button>
-                </div>
-                <div className='mpesa-form' style={mpesaStyle}>
-                    <input type='text' name='mpesa' placeholder='Enter your Mpesa number'/>
-                </div>
-                <div className='visa-form' style={visaStyle}>
-                    <input type='text' maxlength="19" name='visa' id='cardNumber' placeholder='Card number' required/>
-                    <input
- type='text' id='expirationDate' maxlength="7" placeholder='Expiration
-Date (MM/YYYY)' required/>
-                    <input type='number' id='half' max="3" placeholder='CVV' required/>
-                </div>
-                <button className='submit-payment-btn'>Continue</button>
             </div>
         </div>
-        <div className='order-summary'></div>
-        </div>
+    </div>
+    </div>
+        
     )
 }
-export default Payment;
+
+export default Donations;
