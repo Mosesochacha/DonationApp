@@ -130,7 +130,8 @@ nav {
 }
 
 .carousel-item img {
-  height: 550px; /* Adjust the height as per your preference */
+  height: 550px; 
+  filter: contrast(0.7);
 }
 
 /* Style the edges with rounded corners */

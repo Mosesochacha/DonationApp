@@ -28,7 +28,7 @@ function Home(){
       <img src="https://images.unsplash.com/photo-1559079236-2e64f89c7764?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="water" />
       <div class="carousel-caption d-none d-md-block">
         <h5 className="carousel-header">Hygiene and Water</h5>
-        <p>Providing sufficient water to all.</p>
+        <p className="carousel-text">Providing sufficient water to all.</p>
       </div>
     </div>
     <div class="carousel-item">
@@ -95,7 +95,7 @@ function Home(){
   </div>
   <div class="text-content">
     <h3 class="mission-t">Mercy Nafula</h3>
-    <p class="text-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <p class="text-content">"Nimefurahia sana kupata nafasi ya kuendelea kwa sababu ya vile Kampuni yenyu imenisaidia pamoja na wasichana wengine kama mimi. Tunashukuru kwa kutuletea maji na kutujengea choo za kutosha."</p>
   </div>
 </div>
 </div>

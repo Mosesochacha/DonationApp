@@ -43,7 +43,7 @@ function Footer(){
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
          <a href="#">Scanfcode</a>.
             </p>
           </div>
