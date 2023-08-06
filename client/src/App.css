@@ -49,14 +49,10 @@
   }
   .navbar {
     padding: 0;
-    
-  
   }
 }
 
-
-
-p, h1, h2, h3,h4,h5,label, a {
+p, h1, h2, h3,h4,h5,label,button, a {
   font-family: 'Roboto Slab', serif;
 
 }
@@ -73,12 +69,13 @@ p, h1, h2, h3,h4,h5,label, a {
   
 }
 nav {
-  background-color: #eb6f8e;
+  /* background-color: #ffffff; */
   height: 100px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: large;
   font-weight: bold;
   border-bottom-style: inset;
+  
 }
 
 
@@ -106,21 +103,21 @@ nav {
   color: black; /* Change to your preferred default link color */
 }
 
-.sticky-navbar {
+/* .sticky-navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Adjust the z-index value as needed to ensure it appears above other elements */
-  /* Add any other styles you want for the sticky navbar */
-}
+  z-index: 1000; 
+} */
 
 
 
 #donate-btn{
   width: 150px; 
   height: 50px; 
-  font-size: 18px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .sign-in{
@@ -529,3 +526,45 @@ img{
     text-decoration: underline;
  
   }
+   
+  /* Donations page */
+
+  .donations-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .donations-container img {
+    width: max-content;
+    height: auto;
+    margin-left: 200px;
+  }
+  
+  .donations-container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #201cd4;
+    color: white;
+    font-size: 40px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .donations-container .btn:hover {
+    background-color: black;
+  }
+
+/*   
+  .qr-icon {
+    width: 200px;
+    height: 200px;
+  } */
+
+ 

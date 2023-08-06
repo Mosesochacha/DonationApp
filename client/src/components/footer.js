@@ -37,14 +37,22 @@ function Footer(){
               
             </ul>
           </div>
+
+          
+          <div class="col-xs-6 col-md-3">
+            <h6>Contact Us</h6>
+            <p>Ngong Lane, Ngong Lane Plaza, 1st Floor, Nairobi Kenya</p>
+            <a href="#">thepath@gmail.com</a>
+          
+          </div>
         </div>
         
       </div>
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
-         <a href="#">Scanfcode</a>.
+            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved. 
+         
             </p>
           </div>
 

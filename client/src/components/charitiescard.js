@@ -13,8 +13,8 @@ function Charitycard(){
 				<div class="card custom-card">
 					<img src="https://media.istockphoto.com/id/996438996/photo/different-school-supplies-in-a-cardboard-box.webp?b=1&s=170667a&w=0&k=20&c=c4PagcVphgX1a8XuNy6tpOXEkwR34psabetzcegt4P0=" class="card-img-top" alt="..." />
 					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<h5 class="card-title">Donations</h5>
+						<p class="card-text">The best thing to do with the best things in life is to give them away.</p>
 						
 						<Link to='/donations' class="btn btn-sm btn-primary" >Donate</Link>
 
@@ -25,8 +25,8 @@ function Charitycard(){
 				<div class="card custom-card">
 					<img src="https://i.pinimg.com/236x/8e/31/a6/8e31a601a6e5c819df877ef81daf3b67.jpg" class="card-img-top" alt="..." />
 					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<h5 class="card-title">Create Charity</h5>
+						<p class="card-text">Where there is charity and wisdom, there is neither fear nor ignorance.</p>
 						
 						<Link to='/create-charity' class="btn btn-sm btn-primary" >Create Charity</Link>
 
@@ -37,8 +37,8 @@ function Charitycard(){
 				<div class="card custom-card">
 					<img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dm9sdW50ZWVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="..." />
 					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<h5 class="card-title">Become a Volunteer</h5>
+						<p class="card-text">Those who are happiest are those who do the most for others.</p>
 						
 						<Link to='/volunteer' class="btn btn-sm btn-primary" >Volunteer</Link>
 					</div>
